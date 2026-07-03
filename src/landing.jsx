@@ -2,6 +2,15 @@ import { useRef, useEffect, useState } from "react";
 import Dither from "./Dither";
 import Navbar from "./Navbar";
 
+/* ─── Image imports ────────────────────────────────────────────────
+   These must be ES module imports (not string paths) so Vite bundles
+   them correctly for production. Adjust the relative paths below if
+   your images actually live in a subfolder (e.g. "./assets/svm.png"). */
+import svmImg from "./svm.png";
+import spamImg from "./spam.png";
+import uplcLogoImg from "./images.jpeg";
+import finncrunkLogoImg from "./f_logo.png";
+
 /* ─── Theme tokens ─────────────────────────────────────────────────── */
 const THEMES = {
   dark: {
@@ -816,15 +825,6 @@ function TechLogo({ name, size = 14 }) {
           <text x="16" y="16.5" textAnchor="middle" fontSize="8" fontWeight="bold" fill="white" fontFamily="sans-serif">++</text>
         </svg>
       );
-    case "Java":
-      return (
-        <svg width={s} height={s} viewBox="0 0 24 24" fill="none">
-          <path d="M8.851 18.56s-.917.534.653.714c1.902.218 2.874.187 4.969-.211 0 0 .552.346 1.321.646-4.699 2.013-10.633-.118-6.943-1.149M8.276 15.933s-1.028.761.542.924c2.032.209 3.636.227 6.413-.308 0 0 .384.389.987.602-5.679 1.661-12.007.13-7.942-1.218" fill="#E76F00"/>
-          <path d="M13.116 11.475c1.158 1.333-.304 2.533-.304 2.533s2.939-1.518 1.589-3.418c-1.261-1.772-2.228-2.652 3.007-5.688 0 .001-8.216 2.051-4.292 6.573" fill="#E76F00"/>
-          <path d="M14.401 0s2.494 2.494-2.365 6.33c-3.896 3.077-.888 4.832-.001 6.836-2.274-2.053-3.943-3.858-2.824-5.539 1.644-2.469 6.197-3.665 5.19-7.627" fill="#E76F00"/>
-          <path d="M9.734 23.924c3.527.226 8.938-.125 9.069-1.792 0 0-.246.633-2.916 1.134-3.001.569-6.707.502-8.903.138 0-.001.449.372 2.75.52" fill="#5382A1"/>
-        </svg>
-      );
     case "SQL":
       return (
         <svg width={s} height={s} viewBox="0 0 24 24" fill="none">
@@ -1186,7 +1186,7 @@ function UPLCLogo({ size = 42 }) {
       }}
     >
       <img
-        src="./src/images.jpeg"
+        src={uplcLogoImg}
         alt="UPLC Logo"
         style={{
           width: "100%",
@@ -1213,7 +1213,7 @@ function FinncrunkLogo({ size = 42 }) {
       }}
     >
       <img
-        src="./src/f_logo.png"
+        src={finncrunkLogoImg}
         alt="Finncrunk Logo"
         style={{
           width: "100%",
@@ -1416,7 +1416,7 @@ const PERSONAL_PROJECTS = [
     stack: ["Python", "TensorFlow", "ResNet", "Streamlit", "CNN"],
     websiteUrl: "https://svm-image-classifier-leth.onrender.com/",
     sourceUrl: "https://github.com/anula-codes/RealityCheck",
-    image: "/src/svm.png",
+    image: svmImg,
     imagePlaceholderLabel: "RealityCheck AI",
   },
   {
@@ -1425,7 +1425,7 @@ const PERSONAL_PROJECTS = [
     stack: ["Python", "Scikit-learn", "NLP", "TF-IDF", "Streamlit"],
     websiteUrl: "https://spam-or-not-rdiy.onrender.com/",
     sourceUrl: "https://github.com/anula-codes/Spam_or_not",
-    image: "/src/spam.png",
+    image: spamImg,
     imagePlaceholderLabel: "Spam SMS Detector",
   },
   {
@@ -1434,7 +1434,7 @@ const PERSONAL_PROJECTS = [
     stack: ["Next.js", "React", "AI", "TypeScript"],
     websiteUrl: null,
     sourceUrl: "https://github.com/anula-codes",
-    image: "/src/spendlens.png",
+    image:null,
     imagePlaceholderLabel: "SpendLens",
   },
   {
@@ -1443,6 +1443,8 @@ const PERSONAL_PROJECTS = [
     stack: ["Python", "Sockets", "Cryptography"],
     websiteUrl: null,
     sourceUrl: "https://github.com/anula-codes",
+    // Not under /src/, so this string path is fine IF the file actually lives at public/projects/securechat.png.
+    // If it's actually inside src/ somewhere, replace with an import like the others above.
     image: "/projects/securechat.png",
     imagePlaceholderLabel: "Secure Chat",
   },
