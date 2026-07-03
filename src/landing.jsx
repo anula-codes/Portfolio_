@@ -1565,7 +1565,7 @@ export default function App() {
         </Section>
 
         {/* PROJECTS */}
-        <Section top="24px", bottom="24px">
+        <Section top="24px" bottom="24px">
           <ProjectsSection />
         </Section>
 
