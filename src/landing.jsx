@@ -1560,17 +1560,17 @@ export default function App() {
         </section>
 
         {/* EXPERIENCE */}
-        <Section>
+        <Section bottom="24px">
           <ExperienceSection />
         </Section>
 
         {/* PROJECTS */}
-        <Section>
+        <Section top="24px", bottom="24px">
           <ProjectsSection />
         </Section>
 
         {/* CERTIFICATIONS & ACHIEVEMENTS */}
-        <Section>
+        <Section top="24px">
           <div>
             <div style={{ margin: "0 0 8px" }}>
               <Reveal>
