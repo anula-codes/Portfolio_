@@ -10,6 +10,7 @@ import svmImg from "./svm.png";
 import spamImg from "./spam.png";
 import uplcLogoImg from "./images.jpeg";
 import finncrunkLogoImg from "./f_logo.png";
+import secureImg from "./secure.png";
 
 /* ─── Theme tokens ─────────────────────────────────────────────────── */
 const THEMES = {
@@ -1434,7 +1435,7 @@ const PERSONAL_PROJECTS = [
     sourceUrl: "https://github.com/anula-codes/XOR-Encryption-Chat",
     // Not under /src/, so this string path is fine IF the file actually lives at public/projects/securechat.png.
     // If it's actually inside src/ somewhere, replace with an import like the others above.
-    image: "/projects/securechat.png",
+    image: secureImg ,
     imagePlaceholderLabel: "Secure Chat",
   },
 ];
