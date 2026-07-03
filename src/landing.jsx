@@ -1427,20 +1427,11 @@ const PERSONAL_PROJECTS = [
     imagePlaceholderLabel: "Spam SMS Detector",
   },
   {
-    title: "SpendLens",
-    description: "Full-stack AI spend audit tool with an editorial newspaper aesthetic. Next.js frontend, AI-powered spend categorisation and insights dashboard.",
-    stack: ["Next.js", "React", "AI", "TypeScript"],
-    websiteUrl: null,
-    sourceUrl: "https://github.com/anula-codes",
-    image:null,
-    imagePlaceholderLabel: "SpendLens",
-  },
-  {
     title: "Secure Chat Application",
     description: "Client–server chat in Python using Socket Programming with XOR cipher encryption, hex encoding, and key-based data integrity validation.",
     stack: ["Python", "Sockets", "Cryptography"],
-    websiteUrl: null,
-    sourceUrl: "https://github.com/anula-codes",
+    websiteUrl: "https://anula-codes.github.io/XOR-Encryption-Chat/",
+    sourceUrl: "https://github.com/anula-codes/XOR-Encryption-Chat",
     // Not under /src/, so this string path is fine IF the file actually lives at public/projects/securechat.png.
     // If it's actually inside src/ somewhere, replace with an import like the others above.
     image: "/projects/securechat.png",
