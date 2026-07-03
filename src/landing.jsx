@@ -1340,8 +1340,6 @@ function ExperienceSection() {
               "Engineered a full-stack Internal Feedback Management System (FMS) serving 1,000+ employees across departments with JWT auth and role-based access control.",
               "Integrated a sentiment analysis pipeline achieving 95% accuracy on employee feedback data, with a real-time analytics dashboard surfacing trends for management.",
               "Identified and resolved navigation inefficiencies in the OIMS Universal Dashboard used by 500+ employees, delivering a 25% usability improvement.",
-              "Built PolicyMind AI — a RAG-based policy intelligence system using FAISS vector search and the Anthropic API — to answer policy queries from indexed documents.",
-              "Developed a Policy Document Version Manager with diff-based change highlighting, PDF parsing via Apache PDFBox, and object storage via MinIO.",
             ]}
           />
         </Reveal>
@@ -1352,7 +1350,7 @@ function ExperienceSection() {
             logo={<FinncrunkLogo size={42} />}
             company="Finncrunk Technologies Private Limited"
             role="Web Development Intern"
-            dates="May 2026 – June 2026"
+            dates="May 2026 – July 2026"
             details={[
               "Built production-grade full-stack web application features using Java, HTML5, CSS3, JavaScript, and Bootstrap, adhering to best coding standards and collaborative version control via Git.",
               "Identified and resolved critical defects across the application lifecycle, improving code quality and ensuring robust, maintainable software delivery.",
@@ -1557,7 +1555,7 @@ export default function App() {
               About
             </div>
             <AboutHeading />
-            <AnimatedParagraph text="I approach development with a design-first mindset, focusing on creating intuitive, polished interfaces before bringing them to life through clean, efficient code. My goal is to build applications that combine thoughtful user experiences with reliable functionality." />
+            <AnimatedParagraph text="I'm a final-year CS undergrad at KIIT, building full-stack applications with Java, Python, React, and Node.js. As a Software Development Intern, I've engineered systems serving 1,000+ users and shipped AI/ML projects hitting 90%+ accuracy. I care about writing clean, reliable code that actually solves the problem in front of me." />
           </div>
         </section>
 
