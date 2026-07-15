@@ -1675,7 +1675,7 @@ export default function App() {
                 </div>
               </div>
               <div style={{ display: "flex", gap: 10, flexWrap: "wrap", alignItems: "center" }}>
-                <a href="https://linkedin.com/in/anula-mishra" target="_blank" rel="noreferrer" className="footer-link-btn">
+                <a href="https://www.linkedin.com/in/anula-mishra-6048192a6/" target="_blank" rel="noreferrer" className="footer-link-btn">
                   <LinkedInIcon size={14} color="currentColor" />
                   LinkedIn
                 </a>
